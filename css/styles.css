@@ -1,9 +1,9 @@
 /* Variables */
 :root {
-    --primary: #B5179E;
-    --primaryDark: #560BAD;
-    --secondary: #4CC9F0;
-    --secondaryDark: #3A0CA3;
+    --primary: #00509D;
+    --primaryDark: #00296B;
+    --secondary: #FFD500;
+    --secondaryDark: #FDC500;
 
     --primaryFont: 'Staatliches', cursive;
 
@@ -78,15 +78,33 @@ h3 {
     padding: 1rem 0;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    /* gap: 2rem; */ /* No supported for iOS */
 }
 
 .navigation__link {
     font-size: 3rem;
     font-family: var(--primaryFont);
     color: white;
+    margin-right: 2rem;
+}
+
+.navigation__link:last-of-type {
+    margin-right: 0;
 }
 
 .navigation__link--active, .navigation__link:hover {
     color: var(--secondary);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primaryDark);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer__text {
+    text-align: center;
+    font-family: var(--primaryFont);
+    font-size: 2.2rem;
 }
