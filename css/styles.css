@@ -36,7 +36,7 @@ a {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .container {
@@ -95,6 +95,28 @@ h3 {
 .navigation__link--active, .navigation__link:hover {
     color: var(--secondary);
 }
+
+/* Products */
+.product {
+
+}
+
+.product__image {
+
+}
+
+.product__info {
+
+}
+
+.product__name {
+
+}
+
+.product__price {
+
+}
+
 
 /* Footer */
 .footer {
