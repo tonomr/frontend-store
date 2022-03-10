@@ -1,0 +1,92 @@
+/* Variables */
+:root {
+    --primary: #B5179E;
+    --primaryDark: #560BAD;
+    --secondary: #4CC9F0;
+    --secondaryDark: #3A0CA3;
+
+    --primaryFont: 'Staatliches', cursive;
+
+}
+
+/* Globals */
+html {
+    box-sizing: border-box; /* apply a natural box layout model to all elements, but allowing components to change */
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; /* apply a natural box layout model to all elements, but allowing components to change */
+}
+
+body {
+    background-color: var(--primary);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--secondary);
+    font-family: var(--primaryFont);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    margin: 3rem 0;
+}
+
+/* Navigation */
+.navigation {
+    background-color: var(--primaryDark);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navigation__link {
+    font-size: 3rem;
+    font-family: var(--primaryFont);
+    color: white;
+}
+
+.navigation__link--active, .navigation__link:hover {
+    color: var(--secondary);
+}
